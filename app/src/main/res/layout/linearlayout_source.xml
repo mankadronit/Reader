@@ -28,7 +28,7 @@
         android:paddingTop="4dp"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:textStyle="normal"
+        android:textStyle=""
         tools:text="Text" />
 
 

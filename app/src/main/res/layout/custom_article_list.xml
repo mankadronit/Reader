@@ -12,47 +12,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:cardBackgroundColor="@color/colorSecondaryLight"
+        app:cardBackgroundColor="@color/colorPrimaryDark"
         android:foreground="?android:attr/selectableItemBackground"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        app:cardUseCompatPadding="true"
         app:cardCornerRadius="4dp"
-        app:cardElevation="10dp"/>
-
-    <ImageView
-        android:layout_marginRight="7dp"
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="7dp"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-        app:srcCompat="@drawable/user_placeholder" />
+        app:cardElevation="6dp">
 
 
-    <TextView
-        android:id="@+id/titleTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Title"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:paddingLeft="5dp"
-        android:layout_marginBottom="9dp"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp">
 
-    <TextView
-        android:id="@+id/authorTextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="5dp"
-        android:text="Author"
-        android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:textColor="@color/colorAccent"
-        android:textSize="16sp" />
+
+        <ImageView
+            android:layout_marginRight="7dp"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/user_placeholder" />
+
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:paddingLeft="5dp"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/authorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Author"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>
